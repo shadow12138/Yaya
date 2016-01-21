@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:layout_marginTop="1dp"
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/rb_all" >
+
+        <RadioButton
+            android:id="@+id/rb_near"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_doors"
+            android:button="@null"
+            android:padding="10dp"
+            android:text="附近门店"
+            android:textColor="@drawable/selector_doors_textcolor" />
+
+        <RadioButton
+            android:id="@id/rb_all"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_doors"
+            android:padding="10dp"
+            android:text="所有门店"
+            android:textColor="@drawable/selector_doors_textcolor" />
+
+        <RadioButton
+            android:id="@+id/rb_self"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_doors"
+            android:padding="10dp"
+            android:text="自提点"
+            android:textColor="@drawable/selector_doors_textcolor" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

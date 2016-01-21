@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yaya.mobile"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.yaya.mobile.MyApplication_"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="8oXQz9OlQkXMAIFhopBeWEW2" />
+
+        <activity
+            android:name="com.yaya.mobile.SplashActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yaya.mobile.MainActivity_"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yaya.mobile.category.CommodityActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
+        <activity
+            android:name="com.yaya.mobile.me.LoginActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
+        <activity
+            android:name="com.yaya.mobile.me.RegisterActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
+        <activity
+            android:name="com.yaya.mobile.me.FindPswActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
+        <activity
+            android:name="com.yaya.mobile.category.CommodityDetailActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
+        <activity
+            android:name="com.yaya.mobile.html.WebViewActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yaya.mobile.me.DoorsActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
+        <activity
+            android:name="com.yaya.mobile.category.ConditionActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
+        <activity
+            android:name="com.yaya.mobile.me.DoorsDetailActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Activity_Animation" />
+    </application>
+
+</manifest>

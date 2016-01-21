@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:padding="20dp" >
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_edittext"
+        android:hint="请输入手机号"
+        android:inputType="phone"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_phone"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_edittext"
+        android:hint="请输入验证码"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tv_code"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/et_code"
+        android:layout_toRightOf="@id/et_code"
+        android:background="@drawable/shape_code"
+        android:gravity="center"
+        android:padding="10dp"
+        android:clickable="true" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/code_progress"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@id/tv_code"
+        android:layout_toRightOf="@id/tv_code" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_code"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/tv_ok"
+        android:text="取消"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_code"
+        android:padding="10dp"
+        android:text="确定"
+        android:textColor="@color/blue" />
+
+</RelativeLayout>

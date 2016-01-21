@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 根据分类请求对应的筛选条件URL -->
+    <string name="url_loadProductCategoryFilters">/tools/app_api_request.ashx?action=loadProductCategoryFilters</string>
+    <string name="url_loadProductsPageData">/tools/app_api_request.ashx?action=loadProductsPageData</string>
+    <string name="url_loadProductCategorys">/tools/app_api_request.ashx?action=loadProductCategorys</string>
+    <string name="url_get_image">http://m.yaya.cn</string>
+    <string name="url_loadProductInfo">/tools/app_api_request.ashx?action=loadProductInfo</string>
+	<string name="url_loadSimilarity">/tools/app_api_request.ashx?action=buyProductList</string>
+	<string name="url_loadProductContents">/tools/app_api_request.ashx?action=loadProductContents</string>
+	<string name="url_loadHomePage">/tools/app_api_request.ashx?action=loadMobileIndex</string>
+	<string name="url_addcart">/tools/app_api_request.ashx?action=AddCart</string>
+	<!-- 会员中心 -->
+	<string name="url_login">/tools/app_api_request.ashx?action=userLogin</string>
+	<string name="url_register">/tools/app_api_request.ashx?action=Addregister</string>
+	<string name="url_getcode">/tools/app_api_request.ashx?action=loadVerifyCode</string>
+	<string name="url_getorders">/tools/app_api_request.ashx?action=GetOrdersList</string>
+	<string name="url_getaddress">/tools/app_api_request.ashx?action=GetAddressList</string>
+	<string name="url_getorderinfo">/tools/app_api_request.ashx?action=GetOrdersCount</string>
+	
+	<string name="url_cart">http://myaya.ynyes.net/shopping_cart.html</string>
+	<string name="url_product_detail">http://m.yaya.cn/product/show/</string>
+	<string name="url_doors">/tools/app_api_request.ashx?action=loadNearlyMendianList</string>
+	<string name="url_update">/tools/app_api_request.ashx?action=checkAndroidVersion</string>
+	<string name="url_search">/tools/app_api_request.ashx?action=loadProductsPageDataSearch</string>
+	<string name="url_sendmsg">/tools/app_api_request.ashx?action=sendMendianInfo</string>
+	<string name="url_door_city">/tools/app_api_request.ashx?action=loadCityStore</string>
+	<string name="url_door_ziti">/tools/app_api_request.ashx?action=loadZiTiDian</string>
+	<string name="url_city">/tools/app_api_request.ashx?action=loadStoreCity</string>
+	<string name="url_introduce">/tools/app_api_request.ashx?action=loadStartScreen</string>
+	<string name="url_yindao">/tools/app_api_request.ashx?action=loadGuideScreen</string>
+	<string name="url_search_filter">/tools/app_api_request.ashx?action=loadSearchFilters</string>
+	<string name="url_me_order">http://myaya.ynyes.net/user/order_list.html</string>
+	<string name="url_me_address">http://myaya.ynyes.net/user/address/index.html</string>
+	<string name="url_me_comment">http://myaya.ynyes.net/user/evaluation/index.html</string>
+	<string name="url_me_focus">http://myaya.ynyes.net/user/follow/index.html</string>
+	<string name="url_me_advice">http://myaya.ynyes.net/help_tousu.html</string>
+	<string name="url_me_info">http://myaya.ynyes.net/user_info.html</string>
+	<string name="url_modify_psw">http://myaya.ynyes.net/user/modifypswd.html</string>
+	<string name="url_information">http://myaya.ynyes.net/user/sms/index.html</string>
+	<string name="url_footer_button">/tools/app_api_request.ashx?action=loadFooterButton</string>
+	<string name="url_findpsw">http://myaya.ynyes.net/findpswd.html</string>
+	<string name="url_repair">http://myaya.ynyes.net/user/baoxiu/index.html</string>
+	<string name="url_meshouhou">http://myaya.ynyes.net/shouhou.html</string>
+	<string name="url_meclub">http://myaya.ynyes.net/member.html</string>
+	
+</resources>

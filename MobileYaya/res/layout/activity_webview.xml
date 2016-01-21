@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <WebView
+            android:id="@+id/wv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        
+        <include 
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/no_network"
+            android:id="@+id/wifi"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/maincolor"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/leftBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/back_b"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:maxWidth="200dp"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/rightBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingRight="15dp"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/menu"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/horizontal_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/rl"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress" />
+    </RelativeLayout>
+
+</FrameLayout>

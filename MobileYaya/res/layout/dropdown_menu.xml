@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green_light"
+    android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/rb_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/selector_window"
+        android:button="@null"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="首页"
+        android:textSize="12sp" />
+
+    <RadioButton
+        android:id="@+id/rb_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/selector_window"
+        android:button="@null"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="分类"
+        android:textSize="12sp" />
+
+    <RadioButton
+        android:id="@+id/rb_me"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/selector_window"
+        android:button="@null"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="会员"
+        android:textSize="12sp" />
+
+    <RadioButton
+        android:id="@+id/rb_cart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/selector_window"
+        android:button="@null"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="购物车"
+        android:textSize="12sp" />
+
+    <RadioButton
+        android:id="@+id/rb_doors"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/selector_window"
+        android:button="@null"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="门店"
+        android:textSize="12sp" />
+
+</RadioGroup>

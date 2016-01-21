@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">丫丫</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="home_page">首页</string>
+    <string name="category">分类</string>
+    <string name="cart">购物车</string>
+    <string name="doors">门店</string>
+    <string name="me">我的</string>
+
+</resources>

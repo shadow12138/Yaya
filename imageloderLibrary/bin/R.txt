@@ -1,0 +1,2 @@
+int id action_settings 0x7f030000
+int menu main 0x7f020000

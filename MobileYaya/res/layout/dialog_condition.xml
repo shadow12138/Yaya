@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa000000"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:id="@+id/rg_condition"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:background="@color/yellow_light" >
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/lv_condition"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

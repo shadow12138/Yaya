@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/maincolor"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/leftBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/back_b"
+        android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/shape_search"
+        android:drawableRight="@drawable/search02"
+        android:hint="搜索关键字"
+        android:padding="10dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/rightBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/menu"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="labels">
+        <item name="commodity_category">商品分类</item>
+        <item name="smart_phone">智能手机</item>
+        <item name="phone_assemble">手机配件</item>
+        <item name="computer_digit">电脑数码</item>
+        <item name="grade_exchange">积分兑换</item>
+        <item name="member_center">会员中心</item>
+        <item name="partner_entry">商家入口</item>
+        <item name="zheng">政企客户</item>
+    </string-array>
+    <string-array name="labels2">
+        <item name="mobile">智能手机</item>
+        <item name="parts">智能配件</item>
+        <item name="computer_digital">电脑数码</item>
+        <item name="wears">智能穿戴</item>
+    </string-array>
+    <string-array name="category1">
+        <item name="type_1">全网通</item>
+        <item name="type_2">移动</item>
+        <item name="type_3">联通</item>
+        <item name="type_4">电信</item>
+    </string-array>
+    <string-array name="category2">
+        <item name="type_1">保护壳</item>
+        <item name="type_2">电源</item>
+        <item name="type_3">贴膜</item>
+        <item name="type_4">耳机</item>
+    </string-array>
+    <string-array name="category3">
+        <item name="type_1">平板iPad</item>
+        <item name="type_2">单反相机</item>
+        <item name="type_3">数码配件</item>
+    </string-array>
+    <string-array name="category4">
+        <item name="type_1">智能手表</item>
+        <item name="type_2">智能手环</item>
+        <item name="type_3">车载设备</item>
+    </string-array>
+    <string-array name="me_labels">
+        <item name="me_orders">我的订单</item>
+        <item name="me_address">收货人管理</item>
+        <item name="me_comments">评价晒单</item>
+        <item name="me_focus">我的关注</item>
+        <item name="me_advice">我的建议</item>
+        <item name="me_info">个人信息</item>
+        <item name="me_doors">我的门店</item>
+        <item name="me_password">修改密码</item>
+        <item name="me_xinxi">我的信息</item>
+        <item name="me_shouhou">售后服务</item>
+        <item name="me_club">会员俱乐部</item>
+        <item name="me_repair">网上报修</item>
+    </string-array>
+
+</resources>

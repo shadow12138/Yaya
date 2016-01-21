@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext"
+            android:drawableLeft="@drawable/login_ico01"
+            android:drawablePadding="10dp"
+            android:hint="请输入用户名"
+            android:padding="10dp"
+            android:singleLine="true" 
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_username"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_edittext"
+            android:drawableLeft="@drawable/bot_nav02"
+            android:drawablePadding="10dp"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:singleLine="true" 
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_mobile"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_edittext"
+            android:drawableLeft="@drawable/login_ico02"
+            android:drawablePadding="10dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:padding="10dp" 
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_psw"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_edittext"
+            android:drawableLeft="@drawable/login_ico02"
+            android:drawablePadding="10dp"
+            android:hint="请输入再次输入密码"
+            android:inputType="textPassword"
+            android:padding="10dp" 
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_confirm"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_edittext"
+            android:hint="请输入验证码"
+            android:padding="10dp" 
+            android:singleLine="true"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/et_code"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/et_code"
+            android:background="@drawable/shape_code"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/gray_text" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_code"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/maincolor_circle"
+            android:text="立即注册"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btn_register"
+            android:layout_marginTop="5dp"
+            android:text="已有账号，立即登录"
+            android:textColor="@color/maincolor" />
+        
+        <ProgressBar 
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pb"/>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.yaya.mobile.ui.view.ObservableScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_background"
+            android:orientation="vertical" >
+
+            
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <requestFocus />
+
+                <com.yaya.mobile.ui.view.DrawableCenterRadioButton
+                    android:id="@+id/rb_sell"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:text="销量"
+                    android:drawablePadding="5dp"
+					android:drawableRight="@drawable/selector_rb_desc"
+                    android:textColor="@drawable/navigate_textcolor" />
+
+                <com.yaya.mobile.ui.view.DrawableCenterRadioButton
+                    android:id="@+id/rb_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="价格"
+                    android:drawablePadding="5dp"
+                    android:textColor="@drawable/navigate_textcolor" />
+
+                <RadioButton
+                    android:id="@+id/rb_condition"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="筛选"
+                    android:textColor="@drawable/navigate_textcolor" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp" >
+
+                <com.yaya.mobile.ui.view.MyGridView
+                    android:id="@+id/gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:horizontalSpacing="1dp"
+                    android:numColumns="1"
+                    android:scrollbarStyle="@null"
+                    android:verticalSpacing="1dp" />
+
+                <ImageView
+                    android:id="@+id/iv_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/empty"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.yaya.mobile.ui.view.ObservableScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
